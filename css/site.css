@@ -4,6 +4,7 @@ body {
     color: #ffffff;
     font-family: 'Inter', 'Segoe UI', sans-serif;
     min-height: 100vh;
+    scroll-behavior: smooth;
 }
 
 /* Glassmorphism Card Effect */
@@ -19,9 +20,10 @@ body {
     background: rgba(255, 255, 255, 0.1);
     transform: translateY(-5px);
     border: 1px solid rgba(0, 212, 255, 0.4);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
-/* Typography */
+/* Typography & Layout Colors */
 .text-cyan { color: #00d4ff !important; }
 
 .hero-title {
@@ -38,17 +40,56 @@ body {
     padding: 8px 15px;
     border-radius: 50px;
     font-size: 0.85rem;
+    display: inline-block;
 }
 
-/* Buttons */
+/* Base Buttons */
 .btn-cyan {
     background: #00d4ff;
     color: #1a1a2e;
     font-weight: bold;
     border-radius: 8px;
+    transition: all 0.3s ease;
 }
 
 .btn-cyan:hover {
     background: #00b4d8;
     color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* Enhanced Glow Button (Get In Touch) */
+.btn-glow {
+    color: #00d4ff;
+    border: 1px solid #00d4ff;
+    background: transparent;
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.2);
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.btn-glow:hover {
+    background: #00d4ff;
+    color: #1a1a2e;
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.6);
+    transform: scale(1.05);
+}
+
+/* Project Hover Interactions */
+.text-decoration-none {
+    transition: opacity 0.3s ease;
+}
+
+.text-decoration-none:hover {
+    opacity: 0.8;
+}
+
+.text-decoration-none:hover h6 {
+    text-decoration: underline;
+    color: #ffffff !important;
+}
+
+/* Footer Border */
+footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
