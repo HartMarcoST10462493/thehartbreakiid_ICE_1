@@ -3,84 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marco Hart | Portfolio</title>
+    <title>Marco Hart | AI/ML Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/site.css">
 </head>
-<body class="bg-light">
+<body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-4">
         <div class="container">
-            <a class="navbar-brand fw-bold text-info" href="index.html">Marco Hart</a>
-            <div class="navbar-nav ms-auto">
-                <a class="nav-link" href="index.html">Home</a>
-                <a class="nav-link text-info fw-bold" href="contact.html">Contact Me</a>
+            <a class="navbar-brand fw-bold text-cyan" href="#">MARCO HART</a>
+            <div class="ms-auto">
+                <a href="contact.html" class="btn btn-outline-light px-4">Get In Touch</a>
             </div>
         </div>
     </nav>
 
-    <header class="hero-section text-center text-white">
-        <div class="container py-5">
-            <div class="d-flex justify-content-between align-items-center mb-5">
-                <span class="text-info fw-bold">Marco Hart</span>
-                <div class="header-links d-none d-md-block">
-                    <span class="me-3 opacity-75">Skills</span>
-                    <span class="me-3 opacity-75">Projects</span>
-                    <span class="text-info fw-bold">Contact Me</span>
+    <header class="container py-5 mt-5">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <h1 class="hero-title mb-3">Turning Data into <span class="text-cyan">Intelligence.</span></h1>
+                <p class="lead opacity-75 mb-4">Final-Year Computer Science Student at <strong>Emeris Ruimsig</strong>. Specializing in Backend Architecture and Aspiring AI/ML Engineer.</p>
+                <div class="d-flex gap-3">
+                    <a href="https://za.linkedin.com/in/marco-hart-a8586b199" target="_blank" class="btn btn-cyan px-4 py-2">LinkedIn</a>
+                    <a href="files/Marco_Hart_CV.pdf" download class="btn btn-outline-light px-4 py-2">Download CV</a>
                 </div>
-            </div>
-            
-            <h1 class="display-1 fw-bold mt-5">Marco Hart</h1>
-            <p class="lead text-info mb-5">Final-Year Computer Science Student (Emeris Ruimsig) · Aspiring AI/ML Engineer</p>
-            
-            <div class="d-flex justify-content-center gap-3 mt-4 pb-5">
-                <a href="https://za.linkedin.com/in/marco-hart-a8586b199" target="_blank" class="btn btn-primary btn-lg px-4">LinkedIn</a>
-                <a href="files/Marco_Hart_CV.pdf" download class="btn btn-outline-light btn-lg px-4">Download PDF CV</a>
             </div>
         </div>
     </header>
 
     <main class="container my-5">
-        <div class="card shadow-sm border-0 p-5 mb-5 rounded-0">
-            <h2 class="display-5 border-bottom pb-3 mb-4 fw-bold">About Me</h2>
-            <p class="fs-4 text-dark">
-                I am a final-year Computer Science student at <strong>Emeris Ruimsig</strong>. I specialize in building robust backend applications and am currently focusing on transitioning into <strong>AI/ML Engineering</strong>.
-            </p>
-        </div>
-
-        <div class="row">
-            <div class="col-12">
-                <h3 class="fw-bold mb-4">Technical Expertise</h3>
-            </div>
-            <div class="col-md-4 mb-4">
-                <h6 class="text-muted text-uppercase small fw-bold">Languages</h6>
-                <div class="d-flex flex-wrap gap-2 mt-2">
-                    <span class="badge bg-dark p-2">C#</span>
-                    <span class="badge bg-dark p-2">Java</span>
-                    <span class="badge bg-dark p-2">Python</span>
-                    <span class="badge bg-dark p-2">Kotlin</span>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="glass-card p-4 h-100">
+                    <h5 class="text-cyan mb-3">Languages</h5>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="badge-custom">C#</span> <span class="badge-custom">Java</span>
+                        <span class="badge-custom">Python</span> <span class="badge-custom">Kotlin</span>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
-                <h6 class="text-muted text-uppercase small fw-bold">Cloud</h6>
-                <div class="d-flex flex-wrap gap-2 mt-2">
-                    <span class="badge bg-dark p-2">Azure</span>
-                    <span class="badge bg-dark p-2">Git</span>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <h6 class="text-muted text-uppercase small fw-bold">Interests</h6>
-                <div class="d-flex flex-wrap gap-2 mt-2">
-                    <span class="badge bg-dark p-2">AI/ML Engineering</span>
+            
+            <div class="col-md-8">
+                <div class="glass-card p-4">
+                    <h3 class="mb-4">Featured Work</h3>
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <h6 class="text-cyan fw-bold">Cloud E-Commerce</h6>
+                            <p class="small opacity-75">Full-stack Azure integration for scalable retail.</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <h6 class="text-cyan fw-bold">Java Task Engine</h6>
+                            <p class="small opacity-75">Complex workflow management & unit testing.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
 
-    <footer class="bg-dark text-white text-center py-4 mt-5">
-        <p class="mb-0 opacity-75">&copy; 2026 Marco Hart. Built for ICE 1.</p>
+    <footer class="container text-center py-5 opacity-50 small">
+        &copy; 2026 Marco Hart. Built for ICE 1.
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
