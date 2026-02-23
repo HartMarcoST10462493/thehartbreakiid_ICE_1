@@ -1,34 +1,50 @@
-/* Custom Portfolio Styles */
+/* Full Professional Styles for Marco Hart */
 body { 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
     scroll-behavior: smooth; 
-    background-color: #f8f9fa;
+    background-color: #f8f9fa; /* Light grey background for the whole page */
+    color: #333;
 }
 
-/* Hero Header Styling */
+/* Dark Hero Section */
 header {
-    background-color: #212529 !important; /* Dark background */
+    background-color: #212529 !important; 
     color: #ffffff !important;
+    padding: 60px 0;
+    margin-bottom: 30px;
 }
 
-/* Card Hover Effects */
+/* Highlighted Name */
+h1 {
+    color: #0dcaf0 !important; /* Cyan color for your name */
+}
+
+/* Card Styling for Projects */
 .card { 
     transition: transform 0.3s ease, box-shadow 0.3s ease; 
-    border-radius: 10px;
+    border-radius: 12px;
+    border: none;
+    background: #fff;
+    margin-bottom: 20px;
 }
 
 .card:hover { 
     transform: translateY(-10px); 
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15) !important; 
 }
 
-/* Badge Styling */
+/* Skill Badges */
 .badge {
     font-size: 0.9rem;
-    margin-right: 5px;
+    padding: 8px 12px;
+    margin: 4px;
+    background-color: #212529 !important;
 }
 
-/* Link Styling */
-.text-info {
-    color: #0dcaf0 !important;
+/* Footer styling */
+footer {
+    background-color: #212529;
+    color: white;
+    padding: 20px 0;
+    margin-top: 50px;
 }
