@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/site.css">
 </head>
-<body>
+<body class="bg-light">
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
         <div class="container">
@@ -20,46 +20,63 @@
     </nav>
 
     <header class="hero-section text-center text-white shadow">
-        <div class="container py-5">
-            <h5 class="text-info fw-bold mb-3">Marco Hart</h5>
-            <div class="ms-auto mb-4 d-none d-md-block text-end opacity-75">
-                <span class="me-3">Skills</span> <span class="me-3">Projects</span> <span class="text-info fw-bold">Contact Me</span>
+        <div class="container py-5 position-relative">
+            <div class="header-nav position-absolute top-0 end-0 mt-2 d-none d-md-block opacity-75">
+                <span class="me-3">Skills</span> 
+                <span class="me-3">Projects</span> 
+                <span class="text-info fw-bold">Contact Me</span>
             </div>
-            <h1 class="display-1 fw-bold mb-4">Marco Hart</h1>
-            <p class="lead mb-5 text-info">Final-Year Computer Science Student (Emeris Ruimsig) · Aspiring AI/ML Engineer</p>
-            <div class="d-flex justify-content-center gap-3">
-                <a href="https://za.linkedin.com/in/marco-hart-a8586b199" target="_blank" class="btn btn-primary btn-lg px-5">LinkedIn</a>
-                <a href="files/Marco_Hart_CV.pdf" download class="btn btn-outline-light btn-lg px-5">Download PDF CV</a>
+            
+            <h5 class="text-info fw-bold mb-4">Marco Hart</h5>
+            <h1 class="display-1 fw-bold mb-3">Marco Hart</h1>
+            <p class="lead mb-4 text-info">Final-Year Computer Science Student (Emeris Ruimsig) · Aspiring AI/ML Engineer</p>
+            
+            <div class="d-flex justify-content-center gap-3 mt-4">
+                <a href="https://za.linkedin.com/in/marco-hart-a8586b199" target="_blank" class="btn btn-primary btn-lg px-4">LinkedIn</a>
+                <a href="files/Marco_Hart_CV.pdf" download class="btn btn-outline-light btn-lg px-4">Download PDF CV</a>
             </div>
         </div>
     </header>
 
     <main class="container my-5">
-        <div class="card shadow-sm border-0 p-5 mb-5">
-            <h2 class="display-5 border-bottom pb-3 mb-4">About Me</h2>
-            <p class="fs-4 text-secondary leading-relaxed">
+        <div class="card shadow-sm border-0 p-5 mb-5 rounded-0">
+            <h2 class="display-6 border-bottom pb-3 mb-4 fw-bold">About Me</h2>
+            <p class="fs-4 text-dark">
                 I am a final-year Computer Science student at <strong>Emeris Ruimsig</strong>. I specialize in building robust backend applications and am currently focusing on transitioning into <strong>AI/ML Engineering</strong>.
             </p>
         </div>
 
-        <div class="row text-center mb-5">
+        <div class="row text-start">
             <div class="col-12">
-                <h3 class="mb-4">Technical Expertise</h3>
+                <h3 class="fw-bold mb-4">Technical Expertise</h3>
             </div>
-            <div class="col-md-4">
-                <div class="p-3 bg-dark text-white rounded mb-3">C# Java Python Kotlin</div>
+            <div class="col-md-4 mb-3">
+                <h6 class="fw-bold">Languages</h6>
+                <div class="d-flex flex-wrap gap-2 mt-2">
+                    <span class="badge bg-dark p-2">C#</span>
+                    <span class="badge bg-dark p-2">Java</span>
+                    <span class="badge bg-dark p-2">Python</span>
+                    <span class="badge bg-dark p-2">Kotlin</span>
+                </div>
             </div>
-            <div class="col-md-4">
-                <div class="p-3 bg-dark text-white rounded mb-3">Azure Git</div>
+            <div class="col-md-4 mb-3">
+                <h6 class="fw-bold">Cloud</h6>
+                <div class="d-flex flex-wrap gap-2 mt-2">
+                    <span class="badge bg-dark p-2">Azure</span>
+                    <span class="badge bg-dark p-2">Git</span>
+                </div>
             </div>
-            <div class="col-md-4">
-                <div class="p-3 bg-dark text-white rounded mb-3">AI/ML Engineering</div>
+            <div class="col-md-4 mb-3">
+                <h6 class="fw-bold">Interests</h6>
+                <div class="d-flex flex-wrap gap-2 mt-2">
+                    <span class="badge bg-dark p-2">AI/ML Engineering</span>
+                </div>
             </div>
         </div>
     </main>
 
-    <footer class="bg-dark text-white text-center py-4">
-        <p class="mb-0">&copy; 2026 Marco Hart. Final-Year Student Portfolio.</p>
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p class="mb-0">&copy; 2026 Marco Hart. Built for ICE 1.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
