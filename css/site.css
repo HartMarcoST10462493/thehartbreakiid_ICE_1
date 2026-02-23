@@ -23,26 +23,46 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
-/* Typography & Link Colors - Fixes Purple Text */
+/* Typography & Link Colors - Fixes Visibility & Purple Text */
 .text-cyan { color: #00d4ff !important; }
 
-/* Global Link Reset: Forces all links to stay cyan or white even after being clicked */
+/* Global Link Reset: Forces links to stay cyan or white even after being clicked */
 a {
     color: #00d4ff;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 a:visited {
-    color: #00d4ff; /* Prevents the purple color */
+    color: #00d4ff; /* Overrides the default purple visited color */
 }
 
 a:hover {
     color: #ffffff;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
-/* Project Specific Links */
+/* Fix for LinkedIn Button Visibility on Hover */
+.btn-cyan {
+    background: #00d4ff;
+    color: #1a1a2e !important; /* High contrast dark text on cyan button */
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 24px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+/* Ensures the button stays cyan and text stays dark when hovered */
+.btn-cyan:hover {
+    background: #00b4d8; /* Slightly darker cyan on hover */
+    color: #ffffff !important; /* Text switches to white for visibility */
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 212, 255, 0.4);
+}
+
+/* Project Specific Descriptions */
 .text-decoration-none p {
     color: rgba(255, 255, 255, 0.75) !important;
 }
@@ -68,21 +88,7 @@ a:hover {
     display: inline-block;
 }
 
-/* Buttons */
-.btn-cyan {
-    background: #00d4ff;
-    color: #1a1a2e;
-    font-weight: bold;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-}
-
-.btn-cyan:hover {
-    background: #00b4d8;
-    color: #ffffff;
-    transform: translateY(-2px);
-}
-
+/* Enhanced Glow Button (Get In Touch) */
 .btn-glow {
     color: #00d4ff;
     border: 1px solid #00d4ff;
@@ -99,7 +105,6 @@ a:hover {
     transform: scale(1.05);
 }
 
-/* Footer Border */
 footer {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
