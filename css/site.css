@@ -1,3 +1,34 @@
-body { font-family: 'Segoe UI', sans-serif; scroll-behavior: smooth; }
-.card { transition: transform 0.3s ease; }
-.card:hover { transform: translateY(-10px); box-shadow: 0 10px 20px rgba(0,0,0,0.15); }
+/* Custom Portfolio Styles */
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    scroll-behavior: smooth; 
+    background-color: #f8f9fa;
+}
+
+/* Hero Header Styling */
+header {
+    background-color: #212529 !important; /* Dark background */
+    color: #ffffff !important;
+}
+
+/* Card Hover Effects */
+.card { 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    border-radius: 10px;
+}
+
+.card:hover { 
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important; 
+}
+
+/* Badge Styling */
+.badge {
+    font-size: 0.9rem;
+    margin-right: 5px;
+}
+
+/* Link Styling */
+.text-info {
+    color: #0dcaf0 !important;
+}
