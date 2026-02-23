@@ -1,50 +1,41 @@
-/* Full Professional Styles for Marco Hart */
-body { 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-    scroll-behavior: smooth; 
-    background-color: #f8f9fa; /* Light grey background for the whole page */
-    color: #333;
+/* Custom Global Styles */
+body {
+    background-color: #f4f7f6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #212529;
 }
 
-/* Dark Hero Section */
-header {
-    background-color: #212529 !important; 
-    color: #ffffff !important;
-    padding: 60px 0;
-    margin-bottom: 30px;
+/* Hero Section Styling */
+.hero-section {
+    background-color: #212529; /* Matches your screenshot exactly */
+    padding: 100px 0;
 }
 
-/* Highlighted Name */
-h1 {
-    color: #0dcaf0 !important; /* Cyan color for your name */
+.text-info {
+    color: #0dcaf0 !important; /* The cyan color for your name */
 }
 
-/* Card Styling for Projects */
-.card { 
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
-    border-radius: 12px;
+/* About Me Card Styling */
+.card {
+    border-radius: 0; /* Flat look like your local version */
+    background-color: #ffffff;
+}
+
+.leading-relaxed {
+    line-height: 1.8;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #0d6efd;
     border: none;
-    background: #fff;
-    margin-bottom: 20px;
 }
 
-.card:hover { 
-    transform: translateY(-10px); 
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15) !important; 
+.btn-outline-light {
+    border-width: 2px;
 }
 
-/* Skill Badges */
-.badge {
-    font-size: 0.9rem;
-    padding: 8px 12px;
-    margin: 4px;
-    background-color: #212529 !important;
-}
-
-/* Footer styling */
+/* Footer */
 footer {
-    background-color: #212529;
-    color: white;
-    padding: 20px 0;
-    margin-top: 50px;
+    border-top: 5px solid #0dcaf0;
 }
