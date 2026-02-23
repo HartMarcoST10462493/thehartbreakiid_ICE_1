@@ -1,42 +1,54 @@
-/* Custom Portfolio Styles */
+/* Modern Deep Background */
 body {
-    background-color: #f8f9fa;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: #ffffff;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    min-height: 100vh;
 }
 
-/* Hero Section Styling */
-.hero-section {
-    background-color: #212529 !important; /* The dark charcoal color */
-    padding: 60px 0;
+/* Glassmorphism Card Effect */
+.glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    transition: all 0.3s ease;
 }
 
-.text-info {
-    color: #0dcaf0 !important; /* The cyan accent color */
+.glass-card:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px);
+    border: 1px solid rgba(0, 212, 255, 0.4);
 }
 
-/* Navbar Branding */
-.navbar-brand {
-    font-size: 1.5rem;
-}
+/* Typography */
+.text-cyan { color: #00d4ff !important; }
 
-/* Card Styling */
-.card {
-    background-color: #ffffff;
-    margin-top: -80px; /* Pulls the card slightly into the hero section for a modern look */
+.hero-title {
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: -2px;
 }
 
 /* Badge Styling */
-.badge {
-    font-size: 0.9rem;
-    font-weight: 500;
+.badge-custom {
+    background: rgba(0, 212, 255, 0.2);
+    color: #00d4ff;
+    border: 1px solid #00d4ff;
+    padding: 8px 15px;
+    border-radius: 50px;
+    font-size: 0.85rem;
 }
 
-/* Button Customization */
-.btn-primary {
-    background-color: #0d6efd;
-    border: none;
+/* Buttons */
+.btn-cyan {
+    background: #00d4ff;
+    color: #1a1a2e;
+    font-weight: bold;
+    border-radius: 8px;
 }
 
-.btn-outline-light {
-    border-width: 2px;
+.btn-cyan:hover {
+    background: #00b4d8;
+    color: #ffffff;
 }
